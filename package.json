@@ -12,7 +12,7 @@
     "test:task1": "jest /tests/task1",
     "task2": "ts-node ./src/task2/task2",
     "test:task2": "jest /tests/task2",
-    "task3": "ts-node ./src/task3/task3.ts",
+    "task3": "ts-node src/task3/task3_1.ts",
     "test:task3": "jest /tests/task3",
     "task4": "ts-node ./src/task4/task4.ts",
     "test:task4": "jest /tests/task4",

@@ -1,11 +1,27 @@
 export class Product {
-    constructor(
-        public name: string,
-        public cost: number,
-    ) {
-    }
+   constructor(
+      private _name: string,
+      private _cost: number,
+   ) {
+   }
 
-    public log() {
-        console.log(`${this.name}; ${this.cost}`);
-    }
+   get name(): string {
+      return this._name
+   }
+
+   set name(value: string) {
+      this._name = value
+   }
+
+   get cost(): number {
+      return this._cost
+   }
+
+   set cost(value: number) {
+      this._cost = value
+   }
+
+   public log() {
+      console.log(`${this.name}; ${this.cost}`);
+   }
 }
